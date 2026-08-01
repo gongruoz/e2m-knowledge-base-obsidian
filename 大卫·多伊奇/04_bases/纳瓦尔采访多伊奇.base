@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.inFolder("大卫·多伊奇")
+    - database == "纳瓦尔采访多伊奇"
+properties:
+  file.name:
+    displayName: 标题
+  summary:
+    displayName: 摘要
+  source:
+    displayName: 来源
+  published:
+    displayName: 发布日期
+views:
+  - type: table
+    name: 纳瓦尔采访多伊奇
+    order:
+      - file.name
+      - summary
+      - source
+      - published
+    sort:
+      - property: database_order
+        direction: ASC

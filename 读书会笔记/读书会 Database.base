@@ -1,0 +1,112 @@
+filters:
+  and:
+    - file.inFolder("读书会笔记")
+    - type == "E2M 读书会"
+formulas:
+  source_kind: if(url, "视频读书会", "补充笔记")
+  note_kind: if(ai_notes == true, "AI 初稿", "人工笔记")
+  video_link: if(url, link(url, "观看"), "")
+properties:
+  file.name:
+    displayName: 标题
+  file.folder:
+    displayName: 书目
+  date:
+    displayName: 日期
+  playlist_order:
+    displayName: 播放顺序
+  formula.source_kind:
+    displayName: 来源
+  formula.note_kind:
+    displayName: 整理方式
+  formula.video_link:
+    displayName: 视频
+  tags:
+    displayName: 标签
+views:
+  - type: table
+    name: 全部笔记
+    order:
+      - file.name
+      - file.folder
+      - date
+      - formula.source_kind
+      - formula.note_kind
+      - playlist_order
+      - formula.video_link
+      - tags
+    sort:
+      - property: date
+        direction: ASC
+      - property: playlist_order
+        direction: ASC
+  - type: table
+    name: 按书目
+    order:
+      - file.folder
+      - file.name
+      - date
+      - formula.note_kind
+      - formula.video_link
+    sort:
+      - property: file.folder
+        direction: ASC
+      - property: playlist_order
+        direction: ASC
+      - property: date
+        direction: ASC
+  - type: table
+    name: 人工笔记
+    filters:
+      and:
+        - ai_notes != true
+    order:
+      - file.name
+      - file.folder
+      - date
+      - formula.video_link
+    sort:
+      - property: date
+        direction: DESC
+  - type: table
+    name: AI 初稿
+    filters:
+      and:
+        - ai_notes == true
+    order:
+      - file.name
+      - file.folder
+      - date
+      - playlist_order
+      - formula.video_link
+    sort:
+      - property: playlist_order
+        direction: ASC
+  - type: table
+    name: 补充笔记
+    filters:
+      and:
+        - url.isEmpty()
+    order:
+      - file.name
+      - file.folder
+      - date
+      - formula.note_kind
+    sort:
+      - property: date
+        direction: DESC
+  - type: table
+    name: 视频索引
+    filters:
+      and:
+        - url.isNotEmpty()
+    order:
+      - playlist_order
+      - file.name
+      - file.folder
+      - date
+      - formula.note_kind
+      - formula.video_link
+    sort:
+      - property: playlist_order
+        direction: ASC

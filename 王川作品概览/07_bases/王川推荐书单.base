@@ -1,0 +1,20 @@
+filters:
+  and:
+    - file.inFolder("王川作品概览")
+    - database == "王川推荐书单"
+properties:
+  date:
+    displayName: Date
+  file.name:
+    displayName: 书名
+  authors:
+    displayName: 作者
+  recommendation:
+    displayName: 原帖推荐语
+views:
+  - type: table
+    name: 王川推荐书单
+    order: [date, file.name, authors, recommendation]
+    sort:
+      - property: database_order
+        direction: ASC

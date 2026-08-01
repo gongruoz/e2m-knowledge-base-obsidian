@@ -1,0 +1,228 @@
+{
+  "main": {
+    "id": "aa8121120b9f2e16",
+    "type": "split",
+    "children": [
+      {
+        "id": "be3504bece717544",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5d218eb79283542",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "读书会笔记/柯匹《逻辑学导论》读书会笔记/《逻辑学导论》第1章-第2章.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "《逻辑学导论》第1章-第2章"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5de9f113ec81c03f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a13420f05598417",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c66f50570e275e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4451807c588db0bd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5de94fca32be7476",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 291.5026054382324
+  },
+  "right": {
+    "id": "d816cbc1008d9eec",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e540408f41dc9cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "090c8693a41c46db",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "读书会笔记/柯匹《逻辑学导论》读书会笔记/《逻辑学导论》第1章-第2章.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 《逻辑学导论》第1章-第2章"
+            }
+          },
+          {
+            "id": "62cab3bd02f3b01c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "读书会笔记/柯匹《逻辑学导论》读书会笔记/《逻辑学导论》第1章-第2章.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 《逻辑学导论》第1章-第2章"
+            }
+          },
+          {
+            "id": "a4350acca60fecf9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b30053880d557917",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "3d1afef5f4ffc76d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "读书会笔记/柯匹《逻辑学导论》读书会笔记/《逻辑学导论》第1章-第2章.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 《逻辑学导论》第1章-第2章"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "e5d218eb79283542",
+  "lastOpenFiles": [
+    "读书会笔记/施展《枢纽》读书会笔记/《枢纽》导论，第一章.md",
+    "读书会笔记/Odyssey《技术革命与生产率悖论》读书会笔记/《技术革命与生产率悖论》框架层 & 机制层.md",
+    "读书会笔记/柯匹《逻辑学导论》读书会笔记/《逻辑学导论》第8-10章.md",
+    "读书会笔记/柯匹《逻辑学导论》读书会笔记/《逻辑学导论》第6章-第7章.md",
+    "读书会笔记/柯匹《逻辑学导论》读书会笔记/《逻辑学导论》第3章-第5章.md",
+    "读书会笔记/柯匹《逻辑学导论》读书会笔记/《逻辑学导论》第1章-第2章.md",
+    "读书会笔记/柯匹《逻辑学导论》读书会笔记",
+    "读书会笔记/汉密尔顿、麦迪逊等《联邦党人文集》读书会笔记/《联邦党人文集》第81章 - 附录4.md",
+    "读书会笔记/汉密尔顿、麦迪逊等《联邦党人文集》读书会笔记/《联邦党人文集》第70章-第80章.md",
+    "读书会笔记/汉密尔顿、麦迪逊等《联邦党人文集》读书会笔记/《联邦党人文集》第59章-第69章.md",
+    "读书会笔记/汉密尔顿、麦迪逊等《联邦党人文集》读书会笔记/《联邦党人文集》第12章-第25章.md",
+    "读书会笔记/汉密尔顿、麦迪逊等《联邦党人文集》读书会笔记/《联邦党人文集》第26章-第36章.md",
+    "读书会笔记/汉密尔顿、麦迪逊等《联邦党人文集》读书会笔记/《联邦党人文集》第48章-第58章.md",
+    "读书会笔记/汉密尔顿、麦迪逊等《联邦党人文集》读书会笔记/《联邦党人文集》第37章-第47章.md",
+    "读书会笔记/汉密尔顿、麦迪逊等《联邦党人文集》读书会笔记/《联邦党人文集》第1章-第11章.md",
+    "读书会笔记/汉密尔顿、麦迪逊等《联邦党人文集》读书会笔记",
+    "读书会笔记/施展《枢纽》读书会笔记",
+    "读书会笔记/佩雷斯《技术革命与金融资本》读书会笔记/《技术革命与金融资本》讨论纪要.md",
+    "读书会笔记/佩雷斯《技术革命与金融资本》读书会笔记/《技术革命与金融资本》5-8章.md",
+    "读书会笔记/佩雷斯《技术革命与金融资本》读书会笔记/《技术革命与金融资本》1-4章.md",
+    "读书会笔记/佩雷斯《技术革命与金融资本》读书会笔记",
+    "读书会笔记/金里卡《当代政治哲学》读书会笔记/《当代政治哲学》（2026-04-17）.md",
+    "读书会笔记/金里卡《当代政治哲学》读书会笔记/《当代政治哲学》（2025-09-06）.md",
+    "读书会笔记/金里卡《当代政治哲学》读书会笔记/《当代政治哲学》第六章1-6.md",
+    "读书会笔记/金里卡《当代政治哲学》读书会笔记/《当代政治哲学》第三章 自由主义的平等.md",
+    "读书会笔记/金里卡《当代政治哲学》读书会笔记/《当代政治哲学》第七章.md",
+    "读书会笔记/金里卡《当代政治哲学》读书会笔记/《当代政治哲学》导论与第一章.md",
+    "读书会笔记/金里卡《当代政治哲学》读书会笔记/《当代政治哲学》功利主义与自由主义的平等.md",
+    "读书会笔记/金里卡《当代政治哲学》读书会笔记",
+    "读书会笔记/斯密德林《估值的艺术》读书会笔记/《估值的艺术》分类估值与期权嵌套.md",
+    "读书会笔记/斯密德林《估值的艺术》读书会笔记/《估值的艺术》估值模型与技术范式.md",
+    "读书会笔记/斯密德林《估值的艺术》读书会笔记",
+    "读书会笔记/道格拉斯《Trading in the Zone》读书会笔记",
+    "读书会笔记/读书会 Database.base",
+    "Untitled.canvas",
+    "读书会笔记/_读书会笔记主页",
+    "Untitled.base",
+    "王川作品概览/06_王川推荐书单/How to Invest Masters on the chart/Untitled.png",
+    "王川作品概览/王川推荐书单/How to Invest Masters on the chart/Untitled.png"
+  ]
+}

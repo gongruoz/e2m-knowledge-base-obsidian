@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.inFolder("大卫·多伊奇")
+    - database == "多伊奇建议阅读"
+properties:
+  file.name:
+    displayName: 标题
+  summary:
+    displayName: 摘要
+  topics:
+    displayName: Select
+  authors:
+    displayName: 作者
+  citation:
+    displayName: Title
+views:
+  - type: table
+    name: 多伊奇建议阅读
+    order:
+      - file.name
+      - summary
+      - topics
+      - authors
+      - citation
+    sort:
+      - property: database_order
+        direction: ASC

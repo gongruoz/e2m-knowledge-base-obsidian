@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.inFolder("王川作品概览")
+    - database == "思维模型"
+properties:
+  file.name:
+    displayName: 标题
+  summary:
+    displayName: 摘要
+views:
+  - type: table
+    name: 思维模型
+    order: [file.name, summary]
+    sort:
+      - property: database_order
+        direction: ASC
