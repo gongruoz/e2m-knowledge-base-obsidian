@@ -3,6 +3,7 @@ type: index
 collection: 大卫·多伊奇
 aliases:
   - David Deutsch
+  - MOC
 ---
 
 # 大卫·多伊奇

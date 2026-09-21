@@ -3,6 +3,7 @@ type: index
 collection: 王川作品概览
 aliases:
   - 王川作品
+  - MOC
 ---
 
 # 王川作品概览
