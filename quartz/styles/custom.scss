@@ -1,0 +1,259 @@
+@use "./variables.scss" as *;
+
+// A restrained reading surface: monochrome, generous rhythm, and fine rules.
+:root {
+  --bodyFont: "Avenir Next", "PingFang SC", sans-serif;
+  --headerFont: "Futura PT", Futura, "Noto Serif SC", "Songti SC", serif;
+}
+
+body {
+  font-family: var(--bodyFont);
+  font-weight: 300;
+  line-height: 1.95;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headerFont);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.page {
+  max-width: none;
+  padding-inline: clamp(1.25rem, 2.5vw, 3.5rem);
+}
+
+.page > #quartz-body {
+  column-gap: clamp(2rem, 4vw, 5rem);
+}
+
+.page .center > article {
+  max-width: 58rem;
+  margin-inline: auto;
+  padding-block: clamp(2rem, 5vw, 5rem) clamp(5rem, 10vw, 9rem);
+}
+
+.page .page-header {
+  margin-top: clamp(2rem, 4vw, 4rem);
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.page .page-header h1 {
+  font-size: clamp(2.15rem, 3.3vw, 3.35rem);
+  line-height: 1.18;
+}
+
+.page > #quartz-body > details.sidebar {
+  display: block;
+  min-width: 0;
+  padding: 1.5rem 0 2rem;
+}
+
+.page .sidebar .panel-toggle {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 1.5rem;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 50%;
+  color: var(--darkgray);
+  cursor: pointer;
+  list-style: none;
+  line-height: 1;
+}
+
+.page .sidebar .panel-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.page .sidebar[open] .panel-icon--expand,
+.page .sidebar:not([open]) .panel-icon--close {
+  display: none;
+}
+
+.page .sidebar .panel-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.page .sidebar .panel-toggle:hover,
+.page .sidebar .panel-toggle:focus-visible {
+  color: var(--dark);
+  border-color: var(--gray);
+}
+
+.page .left.sidebar .panel-toggle {
+  right: -1rem;
+}
+
+.page .right.sidebar .panel-toggle {
+  left: -1rem;
+}
+
+.page .sidebar .panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  min-width: 0;
+  padding-top: 3.1rem;
+}
+
+// Give the reading column and both navigation trees the same unhurried rhythm.
+.page article .markdown-rendered {
+  line-height: 2;
+}
+
+.page article .markdown-rendered > p,
+.page article .markdown-rendered > ul,
+.page article .markdown-rendered > ol {
+  margin-block: 1.25rem;
+}
+
+.page .explorer-content li,
+.page .toc-content li,
+.page .backlinks li {
+  line-height: 1.8;
+  margin-block: 0.25rem;
+}
+
+.page .explorer-content .folder-container {
+  padding-block: 0.2rem;
+}
+
+.page .sidebar:not([open]) .panel-content {
+  display: none;
+}
+
+// Folder pages can render no right-hand components at all.
+.page > #quartz-body > details.right.sidebar:has(> .panel-content:empty) {
+  display: none;
+}
+
+// Keep the reading column fixed when a side panel is collapsed.
+@media (min-width: 800px) {
+  .page > #quartz-body > .sidebar:not([open]) {
+    width: 3rem;
+  }
+
+  .page > #quartz-body > .right.sidebar:not([open]) {
+    justify-self: end;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page > #quartz-body {
+    grid-template-columns: minmax(0, 15rem) minmax(0, 1fr) minmax(0, 15rem);
+  }
+
+  body[data-slug="e2m-读书会资料库---index"] .page > #quartz-body {
+    grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+    grid-template-areas: "grid-sidebar-left grid-header" "grid-sidebar-left grid-center" "grid-sidebar-left grid-footer";
+  }
+}
+
+body[data-slug="e2m-读书会资料库---index"] .page .center > article {
+  max-width: 72rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+body[data-slug="e2m-读书会资料库---index"] .page article .markdown-rendered > h2 {
+  margin: 0;
+  padding: clamp(2rem, 4vw, 3.5rem) 0 0;
+  border-top: 1px solid var(--lightgray);
+  font-size: clamp(1.7rem, 2.4vw, 2.5rem);
+  line-height: 1.25;
+}
+
+body[data-slug="e2m-读书会资料库---index"] .page article .markdown-rendered > h2 > a.alias {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+body[data-slug="e2m-读书会资料库---index"] .page article .markdown-rendered > h2 > a.alias::after {
+  content: "↗";
+  margin-left: 0.55em;
+  font-family: var(--bodyFont);
+  font-size: 0.58em;
+  font-weight: 300;
+  vertical-align: 0.15em;
+}
+
+body[data-slug="e2m-读书会资料库---index"] .page article .markdown-rendered > h2 + p {
+  max-width: 42rem;
+  margin: 0.9rem 0 clamp(3rem, 5vw, 4.5rem);
+  color: var(--darkgray);
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+}
+
+.page .home-graph {
+  max-width: 72rem;
+  margin: clamp(2rem, 5vw, 5rem) auto clamp(5rem, 8vw, 8rem);
+}
+
+.page .home-graph .graph > .graph-outer {
+  height: clamp(28rem, 46vw, 38rem);
+  margin-top: 1.5rem;
+  border-color: var(--lightgray);
+}
+
+.page .home-graph .graph > h3 {
+  font-family: var(--headerFont);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: 400;
+}
+
+.page article a.internal {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.28em;
+}
+
+.page article blockquote.transclude {
+  margin-block: 3rem;
+  padding: 1.25rem 1.5rem;
+  border-inline-start: 1px solid currentColor;
+}
+
+.page article .transclude-src {
+  margin: 0 0 1.25rem;
+  font-size: 0.82em;
+  letter-spacing: 0.02em;
+}
+
+.page article .transclude-src a {
+  font-weight: 400;
+}
+
+@media all and ($mobile) {
+  .page {
+    padding-inline: 1.25rem;
+  }
+
+  .page .sidebar .panel-toggle {
+    display: none;
+  }
+
+  .page > #quartz-body > details.sidebar {
+    padding-top: 1.5rem;
+  }
+
+  .page .center > article {
+    padding-block: 1.5rem 5rem;
+  }
+
+  .page .home-graph .graph > .graph-outer {
+    height: 26rem;
+  }
+}

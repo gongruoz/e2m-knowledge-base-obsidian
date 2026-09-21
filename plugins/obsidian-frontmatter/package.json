@@ -1,0 +1,15 @@
+{
+  "name": "e2m-obsidian-frontmatter",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./index.js",
+  "exports": { ".": "./index.js" },
+  "quartz": {
+    "name": "obsidian-frontmatter",
+    "displayName": "Obsidian Frontmatter",
+    "category": "transformer",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "defaultOrder": 5
+  }
+}

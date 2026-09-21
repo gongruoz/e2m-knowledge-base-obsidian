@@ -1,0 +1,20 @@
+{
+  "name": "e2m-local-graph",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./components": "./index.js"
+  },
+  "quartz": {
+    "name": "local-graph",
+    "displayName": "Graph",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "components": {
+      "Graph": { "displayName": "Graph", "defaultPosition": "right", "defaultPriority": 10 }
+    }
+  }
+}
