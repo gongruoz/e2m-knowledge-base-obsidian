@@ -253,7 +253,18 @@ body[data-slug="e2m-读书会资料库---index"] .page article .markdown-rendere
     padding-block: 1.5rem 5rem;
   }
 
-  .page .home-graph .graph > .graph-outer {
-    height: 26rem;
+  .page .graph > .graph-outer,
+  .page .graph > .global-graph-outer {
+    display: none;
+  }
+
+  .page .home-graph .graph > h3::after {
+    content: "请在桌面端查看";
+    display: block;
+    margin-top: 0.75rem;
+    color: var(--gray);
+    font-family: var(--bodyFont);
+    font-size: 0.8rem;
+    font-weight: 400;
   }
 }

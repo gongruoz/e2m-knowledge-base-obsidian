@@ -2,7 +2,7 @@
 configuration:
   pageTitle: E2M 读书会资料库
   pageTitleSuffix: ""
-  enableSPA: true
+  enableSPA: false
   enablePopovers: true
   analytics:
     provider: plausible

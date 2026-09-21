@@ -21,6 +21,17 @@ export function Graph(options) {
     1,
     "browser pathname decoding",
   )
+  // Pixi renders at the device pixel ratio and the homepage graph contains the
+  // whole vault. On phones this can exhaust the browser's GPU/memory budget and
+  // trigger reload loops (especially inside WeChat). Do not load D3/Pixi or
+  // start any graph simulation below the mobile breakpoint.
+  script = replaceExactly(
+    script,
+    "(function(){function u()",
+    '(function(){if(matchMedia("(max-width: 800px)").matches){return}function u()',
+    1,
+    "mobile graph guard",
+  )
   // Keep graph labels hidden at every zoom level. The upstream hover handler
   // still reveals the hovered node's title and its connected edges.
   script = replaceExactly(script, "j.alpha=F", "j.alpha=0", 1, "zoom labels")
