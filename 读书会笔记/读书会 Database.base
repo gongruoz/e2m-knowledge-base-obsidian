@@ -31,13 +31,10 @@ views:
       - file.folder
       - date
       - formula.source_kind
-      - formula.note_kind
-      - playlist_order
       - formula.video_link
-      - tags
     sort:
       - property: date
-        direction: ASC
+        direction: DESC
       - property: playlist_order
         direction: ASC
   - type: table
@@ -46,7 +43,6 @@ views:
       - file.folder
       - file.name
       - date
-      - formula.note_kind
       - formula.video_link
     sort:
       - property: file.folder
@@ -77,7 +73,6 @@ views:
       - file.name
       - file.folder
       - date
-      - playlist_order
       - formula.video_link
     sort:
       - property: playlist_order
@@ -91,7 +86,6 @@ views:
       - file.name
       - file.folder
       - date
-      - formula.note_kind
     sort:
       - property: date
         direction: DESC
@@ -101,11 +95,9 @@ views:
       and:
         - url.isNotEmpty()
     order:
-      - playlist_order
       - file.name
       - file.folder
       - date
-      - formula.note_kind
       - formula.video_link
     sort:
       - property: playlist_order
